@@ -90,14 +90,14 @@ function Post({ post }: Props) {
            <div className="flex flex-col p-10 my-10 bg-yellow-500 Itext-white
            max-w-2xl mx-auto">
              <h3 className="text-3x font-bold">
-               Thank you for submitting your comment!
+               Waad ku mahad san tahay fikirka aad nala wadaagtay
              </h3>
-             <p>Once it has been approved, it will appear below!</p>
+             <p>Marka lasoo aqbalo wexey kasoo muuqan doontaa meesha hoose shukran!</p>
            </div>
          ) : (
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
-          <h3 className="text-sm Itext-yellow-500">Enjoyed this article?</h3>
-            <h4 className="text-3xl font-bold">Leave a comment below!</h4>
+          <h3 className="text-sm Itext-yellow-500">warbixintaan maka heshay ?</h3>
+            <h4 className="text-3xl font-bold">Fikirkaaga nala wadaag walaal!</h4>
             <hr className="py-3 mt-2" />
                 <input
                     {...register("_id")}
@@ -137,17 +137,15 @@ function Post({ post }: Props) {
             </label>
             <div className="flex flex-col p-5">
               {errors.name && (
-                <span className="text-red-500">- The Name
-                Field is required</span>
+                <span className="text-red-500">- Magaca waa qasab inaa galisa halkan</span>
               )}
               {errors.comment && (
                 <span className="text-red-500">
-                    The Comment Field is required
+                   Fikirkaaga ku qor halkan fadlan
                 </span>
               )}
               {errors.email && (
-                <span className="Itext-red-500">- The Email
-                Field is required</span>
+                <span className="Itext-red-500">- Fadlan halkan gali email kaga hana ka baqin cidna lawadaagi meyno</span>
               )}
               </div>
               <input

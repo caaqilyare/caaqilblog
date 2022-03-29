@@ -13,7 +13,7 @@ const Error: NextPage<ErrorProps> = ({ statusCode }) => {
         <Header />
         <div className="flex justify-between p-5 max-w-7xl mx-auto">
         <h1 className='text-6xl max-w-xl font-serif'>
-                <span className='underline decoration-black decoration-4'>The page is :</span> {""}  i{statusCode} go back to home please
+                {statusCode}
               </h1>
         </div>
       

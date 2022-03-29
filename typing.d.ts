@@ -2,6 +2,7 @@ export interface Post{
     _id: string;
     _createdAt: string;
     title: string;
+    category: string;
     author: {
         name: string;
         image: string;
@@ -34,4 +35,9 @@ export interface Comment {
     _type: string;
     _updatedAt: string;
   }
-
+ interface Category {
+    _id: string;
+    _createdAt: string;
+    title: string;
+    category: string;
+ }

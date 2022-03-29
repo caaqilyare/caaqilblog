@@ -13,7 +13,7 @@ export default function  Home ({ posts }: Props) {
   return (
     <div className="max-w-7xl mx-auto">
         <Head>
-          <title>My Blog</title>
+          <title>Somali News</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -56,7 +56,8 @@ export default function  Home ({ posts }: Props) {
 }
 
 export const getServerSideProps =async () => {
-  const query = `*[_type == "post"] {
+  const query = `*[_type == "post"] | order(_createdAt desc)
+  {
     _id,
     title,
     author-> {
